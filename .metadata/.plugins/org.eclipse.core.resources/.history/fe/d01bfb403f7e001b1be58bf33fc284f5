@@ -1,0 +1,7 @@
+package com.capgemini.model;
+
+public class DonationItem {
+	private int itemId;
+	private DonationType item;
+	private String itemDescription;
+}
