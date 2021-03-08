@@ -3,12 +3,13 @@ package com.cg.ngoportal.dao;
 import java.sql.SQLException;
 import java.util.List;
 
+import com.cg.ngoportal.exception.NoSuchEmployeeException;
 import com.cg.ngoportal.model.DonationDistribution;
 import com.cg.ngoportal.model.Employee;
 import com.cg.ngoportal.model.NeedyPeople;
 
 public interface EmployeeDao {
-	public int login(Employee employee) throws SQLException;
+	public int login(Employee employee) throws SQLException,NoSuchEmployeeException;
 	public int createNeedyPerson(NeedyPeople person);
 	public int deleteNeedyPerson(NeedyPeople person);
 	public NeedyPeople readNeedyPeopleById(int id);

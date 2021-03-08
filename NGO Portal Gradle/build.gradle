@@ -27,14 +27,16 @@ dependencies {
 
  
 
- // Use JUnit Jupiter API for testing.
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
-    
-    // https://mvnrepository.com/artifact/org.mockito/mockito-all
-testCompile group: 'org.mockito', name: 'mockito-core', version: '3.5.7'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.7.0'
 
  
 
+     // Use JUnit Jupiter API for testing.
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
+    
+    // https://mvnrepository.com/artifact/org.mockito/mockito-all
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '3.8.0'
+ 
     // Use JUnit Jupiter Engine for testing.
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 
@@ -44,17 +46,9 @@ testCompile group: 'org.mockito', name: 'mockito-core', version: '3.5.7'
     implementation 'com.google.guava:guava:29.0-jre'
     
     // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
-implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.4.13.Final'
-
-// https://mvnrepository.com/artifact/org.springframework/spring-core
-implementation group: 'org.springframework', name: 'spring-core', version: '5.3.0'
-
-    
+    implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.4.13.Final'
 
  
 
-
- compile files('libs/ojdbc8.jar')
- 
-    
+    compile files('libs/ojdbc8.jar') 
 }

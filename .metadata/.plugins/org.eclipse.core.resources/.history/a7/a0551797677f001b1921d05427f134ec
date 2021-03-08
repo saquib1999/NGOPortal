@@ -1,0 +1,21 @@
+package com.cg.ngoportal.model;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "NDonationDistribution")
+public class DonationDistribution {
+	@Id
+	private int distributionId;
+	private NeedyPeople person;
+	private DonationItem item;
+	private Employee distributedBy;
+	private double amountDistributed;
+	private Date dateOfDistribution;
+	private Date approvalOrRejectedDate;
+	private DonationDistributionStatus status;
+}
