@@ -22,7 +22,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 	public EmployeeDaoImpl() {
 		// TODO Auto-generated constructor stub
 		
-		emf = Persistence.createEntityManagerFactory("Project");
+		emf = Persistence.createEntityManagerFactory("project");
 		em = emf.createEntityManager();
 		
 		

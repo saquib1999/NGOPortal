@@ -9,7 +9,7 @@ import com.cg.ngoportal.model.Employee;
 import com.cg.ngoportal.model.NeedyPeople;
 
 public interface EmployeeDao {
-	public int login(Employee employee) throws SQLException,NoSuchEmployeeException;
+	public int login(Employee employee) throws SQLException, NoSuchEmployeeException;
 	public int createNeedyPerson(NeedyPeople person);
 	public int deleteNeedyPerson(NeedyPeople person);
 	public NeedyPeople readNeedyPeopleById(int id);

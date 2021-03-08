@@ -1,19 +1,26 @@
 package com.cg.ngoportal.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name = "NEmployee")
+@Table(name = "NEmployee")//,uniqueConstraints = @UniqueConstraint(columnNames = {"employeeId","username"}))
 public class Employee {
-	
+	@Id
 	private int employeeId;
 	private String employeeName;
 	private String email;
 	private String phone;
+	@OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id", referencedColumnName = "addressId")
+
 	private Address address;
-	@Id
 	private String username;
 	private String password;
 	

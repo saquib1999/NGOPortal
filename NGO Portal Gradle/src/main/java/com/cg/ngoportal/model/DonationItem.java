@@ -10,7 +10,7 @@ import javax.persistence.Table;
 public class DonationItem {
 	@Id
 	private int itemId;
-	@OneToOne
+	//@OneToOne
 	private DonationType item;
 	private String itemDescription;
 	public DonationItem(int itemId, DonationType item, String itemDescription) {

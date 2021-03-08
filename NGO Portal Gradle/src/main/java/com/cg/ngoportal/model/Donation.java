@@ -2,8 +2,10 @@ package com.cg.ngoportal.model;
 
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -12,8 +14,13 @@ import javax.persistence.Table;
 public class Donation {
 	@Id
 	private int donationId;
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "donor_id", referencedColumnName = "donorId")
+
 	private Donor donor;
+	@OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "item_id", referencedColumnName = "itemId")
+
 	private DonationItem item;
 	private double donationAmount;
 	private Date donationDate;
@@ -24,6 +31,10 @@ public class Donation {
 		this.item = item;
 		this.donationAmount = donationAmount;
 		this.donationDate = donationDate;
+	}
+	
+	public Donation() {
+		// TODO Auto-generated constructor stub
 	}
 	public int getDonationId() {
 		return donationId;

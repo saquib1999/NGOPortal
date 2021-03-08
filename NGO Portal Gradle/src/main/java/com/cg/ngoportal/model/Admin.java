@@ -17,6 +17,11 @@ public class Admin {
 		this.adminUsername = adminUsername;
 		this.adminPassword = adminPassword;
 	}
+	
+	public Admin() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public int getAdminId() {
 		return adminId;
 	}

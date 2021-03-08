@@ -7,8 +7,6 @@ import com.cg.ngoportal.exception.NoSuchEmployeeException;
 import com.cg.ngoportal.model.DonationDistribution;
 import com.cg.ngoportal.model.Employee;
 
-
-
 public interface AdminService {
 	public boolean addEmployee(Employee employee) throws DuplicateEmployeeException;
 	public Employee modifyEmployee(Employee employee) throws NoSuchEmployeeException;
