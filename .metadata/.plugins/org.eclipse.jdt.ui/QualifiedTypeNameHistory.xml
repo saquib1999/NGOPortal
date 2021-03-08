@@ -1,2 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.cg.ngoportal.exception.DuplicateEmployeeException"/>
+    <fullyQualifiedTypeName name="com.cg.ngoportal.model.Donor"/>
+    <fullyQualifiedTypeName name="com.cg.ngoportal.exception.NoSuchDonorException"/>
+    <fullyQualifiedTypeName name="com.cg.ngoportal.exception.DuplicateDonorException"/>
+    <fullyQualifiedTypeName name="com.cg.ngoportal.model.Donation"/>
+    <fullyQualifiedTypeName name="com.cg.ngoportal.model.DonationDistribution"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="com.cg.ngoportal.model.Address"/>
+    <fullyQualifiedTypeName name="javax.management.Query"/>
+    <fullyQualifiedTypeName name="javax.persistence.Query"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.cg.ngoportal.model.NeedyPeople"/>
+    <fullyQualifiedTypeName name="com.cg.ngoportal.model.Employee"/>
+    <fullyQualifiedTypeName name="com.cg.ngoportal.exception.NoSuchEmployeeException"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+</qualifiedTypeNameHistroy>

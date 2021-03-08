@@ -1,0 +1,13 @@
+package com.cg.ngoportal.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "NAdmin")
+public class Admin {
+	private int adminId;
+	private String adminUsername;
+	private String adminPassword;
+	
+}

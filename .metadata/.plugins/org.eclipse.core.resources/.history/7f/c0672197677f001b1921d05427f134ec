@@ -1,0 +1,15 @@
+package com.cg.ngoportal.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "NDonationBox")
+public class DonationBox {
+	private String ngoName;
+	@Id
+	private String registrationNumber;
+	private String accountNumber;
+	private double totalCollection;
+}
