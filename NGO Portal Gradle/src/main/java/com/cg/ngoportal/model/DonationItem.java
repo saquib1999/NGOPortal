@@ -10,9 +10,16 @@ import javax.persistence.Table;
 public class DonationItem {
 	@Id
 	private int itemId;
-	//@OneToOne
+	
 	private DonationType item;
 	private String itemDescription;
+	
+	
+	
+	public DonationItem() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public DonationItem(int itemId, DonationType item, String itemDescription) {
 		super();
 		this.itemId = itemId;

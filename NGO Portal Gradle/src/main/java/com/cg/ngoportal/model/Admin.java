@@ -11,6 +11,9 @@ public class Admin {
 	private int adminId;
 	private String adminUsername;
 	private String adminPassword;
+
+	
+	
 	public Admin(int adminId, String adminUsername, String adminPassword) {
 		super();
 		this.adminId = adminId;

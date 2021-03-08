@@ -33,6 +33,14 @@ public class DonationDistribution {
 	private Date dateOfDistribution;
 	private Date approvalOrRejectedDate;
 	private DonationDistributionStatus status;
+	
+	
+	
+	public DonationDistribution() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
 	public DonationDistribution(int distributionId, NeedyPeople person, DonationItem item, Employee distributedBy,
 			double amountDistributed, Date dateOfDistribution, Date approvalOrRejectedDate,
 			DonationDistributionStatus status) {

@@ -20,8 +20,13 @@ public class Donor {
 	
 	@OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id", referencedColumnName = "addressId")
-
 	private Address address;
+
+	
+	public Donor() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public Donor(int donorId, String donorName, String donorEmail, String donorPhone, String donorUsername,
 			String donorPassword, Address address) {
 		super();

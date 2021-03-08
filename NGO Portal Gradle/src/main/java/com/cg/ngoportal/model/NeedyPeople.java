@@ -20,6 +20,12 @@ public class NeedyPeople {
     @JoinColumn(name = "address_id", referencedColumnName = "addressId")
 
 	private Address address;
+	
+	
+	public NeedyPeople() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public NeedyPeople(int needyPersonId, String needyPersonName, String phone, double familyIncome, Address address) {
 		super();
 		this.needyPersonId = needyPersonId;

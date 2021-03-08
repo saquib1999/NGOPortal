@@ -24,6 +24,9 @@ public class Donation {
 	private DonationItem item;
 	private double donationAmount;
 	private Date donationDate;
+	
+	
+	
 	public Donation(int donationId, Donor donor, DonationItem item, double donationAmount, Date donationDate) {
 		super();
 		this.donationId = donationId;
