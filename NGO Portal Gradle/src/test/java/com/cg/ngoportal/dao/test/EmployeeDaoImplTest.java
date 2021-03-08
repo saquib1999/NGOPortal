@@ -2,6 +2,8 @@ package com.cg.ngoportal.dao.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.sql.SQLException;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -11,6 +13,10 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import com.cg.ngoportal.dao.EmployeeDaoImpl;
+import com.cg.ngoportal.exception.NoSuchEmployeeException;
+import com.cg.ngoportal.model.Employee;
 
 class EmployeeDaoImplTest {
 	
@@ -27,8 +33,7 @@ class EmployeeDaoImplTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
-		emf = Persistence.createEntityManagerFactory("Project");
-		em = emf.createEntityManager();
+		
 	}
 
 	@AfterEach
@@ -42,7 +47,19 @@ class EmployeeDaoImplTest {
 
 	@Test
 	void testLogin() {
-		fail("Not yet implemented");
+	emf = Persistence.createEntityManagerFactory("Project");
+	em = emf.createEntityManager();
+	Employee e1 = new Employee(1, null, null, null, null, "abcd", "abcd");
+	EmployeeDaoImpl ed = new EmployeeDaoImpl();
+	try {
+		assertEquals(1, ed.login(e1));
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (NoSuchEmployeeException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	}
 
 	@Test

@@ -7,8 +7,6 @@ import com.cg.ngoportal.model.DonationDistribution;
 import com.cg.ngoportal.model.Employee;
 import com.cg.ngoportal.model.NeedyPeople;
 
-
-
 public interface EmployeeService {
 	public boolean login(Employee employee)throws NoSuchEmployeeException;
 	public boolean addNeedyPerson(NeedyPeople person);

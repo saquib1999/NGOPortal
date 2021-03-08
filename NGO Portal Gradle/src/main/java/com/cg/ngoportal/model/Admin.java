@@ -11,12 +11,20 @@ public class Admin {
 	private int adminId;
 	private String adminUsername;
 	private String adminPassword;
+
+	
+	
 	public Admin(int adminId, String adminUsername, String adminPassword) {
 		super();
 		this.adminId = adminId;
 		this.adminUsername = adminUsername;
 		this.adminPassword = adminPassword;
 	}
+	
+	public Admin() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public int getAdminId() {
 		return adminId;
 	}

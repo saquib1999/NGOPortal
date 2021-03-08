@@ -12,6 +12,12 @@ public class DonationBox {
 	private String registrationNumber;
 	private String accountNumber;
 	private double totalCollection;
+	
+	public DonationBox() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
 	public DonationBox(String ngoName, String registrationNumber, String accountNumber, double totalCollection) {
 		super();
 		this.ngoName = ngoName;

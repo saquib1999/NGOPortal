@@ -1,7 +1,10 @@
 package com.cg.ngoportal.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -12,7 +15,17 @@ public class NeedyPeople {
 	private String needyPersonName;
 	private String phone;
 	private double familyIncome;
+	
+	@OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id", referencedColumnName = "addressId")
+
 	private Address address;
+	
+	
+	public NeedyPeople() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public NeedyPeople(int needyPersonId, String needyPersonName, String phone, double familyIncome, Address address) {
 		super();
 		this.needyPersonId = needyPersonId;
